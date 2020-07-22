@@ -8,5 +8,10 @@ class UserSerializer < ActiveModel::Serializer
     #contains the comments and likes of this post
   has_many :liked_posts
   #all the actual posts they liked
+
+  def posts
+    object.posts.order! 'created_at DESC'
+  end 
+  
 end
 
