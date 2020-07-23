@@ -5,6 +5,12 @@ class PostLikesController < ApplicationController
         render json: @postLikes
     end
 
+    def destroy
+        @deletePostLike = PostLike.find(params[:id])
+        @deletePostLike.destroy 
+        render json: @deletePostLike
+    end
+
     private 
 
     def postLike_params
