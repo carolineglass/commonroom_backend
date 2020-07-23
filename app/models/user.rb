@@ -10,6 +10,8 @@ class User < ApplicationRecord
     has_many :comments
     has_many :post_comments, :through => :comments, :source => :post
 
+    validates :username, uniqueness: true
+
     def full_name
         first_name + " " + last_name
     end
