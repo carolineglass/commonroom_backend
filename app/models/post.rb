@@ -7,5 +7,9 @@ class Post < ApplicationRecord
 
     has_many :comments
     has_many :comments_users, :through => :comments, :source => :user
+
+    def date_created
+        self.created_at.strftime("%B %e, %Y")
+    end
 end
 
