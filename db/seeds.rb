@@ -40,6 +40,7 @@ data["Response"].each do |country|
 end
 
 australia = Country.find_by(name: "Australia")
+indonesia = Country.find_by(name: "Indonesia")
 
 # USERS
 caroline = User.create(
@@ -65,6 +66,148 @@ meghann = User.create(
         bio: "Hi, i'm Meghann", 
         answer: "tacos"
         )  
+
+kat = User.create(
+    first_name: "Kat", 
+    last_name: "Maldon",
+    username: "LanaKane",
+    age: 35, 
+    img: "https://ca.slack-edge.com/T02MD9XTF-U010S0FNPB6-792446a6ac06-512", 
+    from: "Germany", 
+    country_id: australia.id, 
+    bio: "Nomadic explorer. Creature of havoc.", 
+    answer: "Pasta with ragu"
+    )
+
+edgar = User.create(
+    first_name: "Edgar", 
+    last_name: "Rivera",
+    username: "ProtoLex",
+    age: 26, 
+    img: "https://ca.slack-edge.com/T02MD9XTF-UTV12MJBG-c6fb5b39ab15-512", 
+    from: "USA", 
+    country_id: australia.id, 
+    bio: "Backpacker by day, coder at night", 
+    answer: "Chicken Pad Thai"
+    )
+
+ramon = User.create(
+    first_name: "Ramon", 
+    last_name: "Echeverria",
+    username: "Piggie_smalls",
+    age: rand(18..45), 
+    img: "https://ca.slack-edge.com/T02MD9XTF-U010MQQRC0N-f7e942518a93-512", 
+    from: "USA", 
+    country_id: australia.id, 
+    bio: "Likes pizza, waffles A la mode and sangria", 
+    answer: "Grandma Slice"
+    )
+
+urgen = User.create(
+    first_name: "Urgen", 
+    last_name: "Sherpa",
+    username: "Urgen123",
+    age: 25, 
+    img: "https://ca.slack-edge.com/T02MD9XTF-UV11S4QJG-473d4b6d3d08-512", 
+    from: "Nepal", 
+    country_id: indonesia.id, 
+    bio: "Hi just do stuff", 
+    answer: "Burgers, pizza, any junk food"
+    )
+
+joseph = User.create(
+    first_name: "Joseph", 
+    last_name: "Lin",
+    username: "carpe_ramen",
+    age: 34, 
+    img: "https://ca.slack-edge.com/T02MD9XTF-U010ARCJ54H-887e6f47bab8-512", 
+    from: "USA", 
+    country_id: indonesia.id, 
+    bio: "Food is life.", 
+    answer: "Ramen"
+    )
+
+    mari = User.create(
+        first_name: "Mari", 
+        last_name: "Anuashvili",
+        username: "mother_of_shibas",
+        age: 25, 
+        img: "https://ca.slack-edge.com/T02MD9XTF-URW0WRBUH-c9de3ba8e6f0-512", 
+        from: "Georgia", 
+        country_id: indonesia.id, 
+        bio: "Likes skiing, biking, and traveling ", 
+        answer: "Khachapuri"
+    )
+
+    rosie = User.create(
+        first_name: "Rosie", 
+        last_name: "Wilt",
+        username: "buffygirl27",
+        age: 21, 
+        img: "https://ca.slack-edge.com/T02MD9XTF-U011R2GEJ6R-a7f9d525aec1-512", 
+        from: "USA", 
+        country_id: indonesia.id, 
+        bio: "I like coding, cooking, and waving at cute dogs on the street", 
+        answer: "Mac and Cheese"
+        )
+
+        sofia = User.create(
+            first_name: "Sofia", 
+            last_name: "Tofigh",
+            username: "supremesofi",
+            age: 23, 
+            img: "https://ca.slack-edge.com/T02MD9XTF-U011R2GDLBF-5b9097599cb3-512", 
+            from: "USA", 
+            country_id: indonesia.id, 
+            bio: "Professional wanderer", 
+            answer: "carbonara pastaaa"
+            )
+
+            srishti = User.create(
+                first_name: "Srishti", 
+                last_name: "Nath",
+                username: "jadeprincess93",
+                age: 26, 
+                img: "https://ca.slack-edge.com/T02MD9XTF-U011R2GA4RK-0d497953e3ef-512", 
+                from: "India", 
+                country_id: indonesia.id, 
+                bio: "I ate smoked whale once. It was not good.", 
+                answer: "Fresh shrimp pad thai"
+                )
+
+            kyle = User.create(
+                    first_name: "Kyle", 
+                    last_name: "Tomanelli",
+                    username: "totallykyle",
+                    age: 24, 
+                    img: "https://ca.slack-edge.com/T02MD9XTF-U011R2GGGDB-4f0e76a7f01d-512", 
+                    from: "USA", 
+                    country_id: australia.id, 
+                    bio: "Totally!", 
+                    answer: "pizza + garlic bread ❤️"
+                    )
+                    james = User.create(
+                        first_name: "James", 
+                        last_name: "Jiang",
+                        username: "JamesTheDebugger",
+                        age: 5, 
+                        img: "https://ca.slack-edge.com/T02MD9XTF-U011R2GKNCD-4b9c75b022f8-512", 
+                        from: "China", 
+                        country_id: indonesia.id, 
+                        bio: "James is a debugger, the bugs are killing him, but he is still debugging. His world was simple — him, the world, and the bugs, until he sees Caroline’s app. Now his life is colorful — him, the world, the bugs, and Caroline’s app.", 
+                        answer: "Takoyaki"
+                        )
+                        coral = User.create(
+                            first_name: "Coral", 
+                            last_name: "Fussman",
+                            username: "coralreef",
+                            age: 25, 
+                            img: "https://ca.slack-edge.com/T02MD9XTF-U01083YN6CA-07e236f1fe28-512", 
+                            from: "Israel", 
+                            country_id: australia.id, 
+                            bio: "catch me outside", 
+                            answer: "cheese, hummus, avocado"
+                            )
             
 # POSTS 
 post1 = Post.create(
