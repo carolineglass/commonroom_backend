@@ -208,10 +208,32 @@ joseph = User.create(
                             bio: "catch me outside", 
                             answer: "cheese, hummus, avocado"
                             )
+                        eric = User.create(
+                                first_name: "Eric", 
+                                last_name: "Kim",
+                                username: "eric420",
+                                age: 25, 
+                                img: "https://ca.slack-edge.com/T02MD9XTF-U91CXSUN4-3bac0a7f6a08-512", 
+                                from: "USA", 
+                                country_id: australia.id, 
+                                bio: "you can call me snuffles", 
+                                answer: "chicken, gatorade, water"
+                            )
+                           jess = User.create(
+                                first_name: "Jessica", 
+                                last_name: "Kim",
+                                username: "jaykay",
+                                age: 28, 
+                                img: "https://ca.slack-edge.com/T02MD9XTF-U011R2GJKUM-74112b0f9808-512", 
+                                from: "USA", 
+                                country_id: australia.id, 
+                                bio: "Teacher turned developer", 
+                                answer: "French Fries"
+                            )
             
 # POSTS 
 post1 = Post.create(
-    user_id: caroline.id, 
+    user_id: jess.id, 
     country_id: australia.id, 
     title: "Bike Ride", 
     post: "Hey! Who's trying to rent bikes around the city", 
@@ -229,7 +251,7 @@ post2 = Post.create(
     )
 
 post3 = Post.create(
-    user_id: caroline.id, 
+    user_id: ramon.id, 
     country_id: australia.id, 
     title: "Camping", 
     post: "any free campgrounds around perth?", 
@@ -238,11 +260,11 @@ post3 = Post.create(
     )
 
 post4 = Post.create(
-    user_id: meghann.id, 
+    user_id: edgar.id, 
     country_id: australia.id, 
     title: "Van for sale", 
     post: "Selling my van, great condition", 
-    category: "for sale",
+    category: "For Sale",
     img: "https://images.squarespace-cdn.com/content/v1/57ef0117579fb34c2451c73b/1585017512460-KG6GZSQ6NI9UNDTM9Z2S/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/VLC_POPS-59.jpg?format=1500w"
     )
 
